@@ -5,7 +5,7 @@ CREATE DATABASE db_candido_capstone;
 USE db_candido_capstone;
 
 -- Create users table
-CREATE TABLE tbl_users (
+CREATE TABLE tbl_Users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     firstname VARCHAR(100) NOT NULL,
     lastname VARCHAR(100) NOT NULL,
@@ -14,6 +14,10 @@ CREATE TABLE tbl_users (
     role_id INT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
  );
+
+ INSERT INTO Users (name, email, password, role)
+ VALUES
+ ('admin', 'admin@admin.com','123456','admin');
  
 --Create Appointment table
 CREATE TABLE tbl_appointments (
