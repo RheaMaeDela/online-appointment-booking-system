@@ -24,6 +24,7 @@ $user = $result->fetch_assoc();
     | <a href="manage-users.php">Manage Users</a>
 <?php endif; ?> |
         <a href="library.php">Library</a> |
+        <a href="shop.php">Shop</a> |
         <a href="changepassword.php">Change Password</a> |
         <a href="logout.php">Logout</a>
     </nav>
